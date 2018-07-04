@@ -57,7 +57,7 @@ DQN shows the best performance in large number sharing and gridworld settings.
 
 ### Git clone
 ```
-$ git clone git@github.com:geek-ai/MAgent.git
+$ git clone https://github.com/geek-ai/MAgent.git
 $ cd MAgent
 ```
 
