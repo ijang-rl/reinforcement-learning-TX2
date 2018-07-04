@@ -1,4 +1,4 @@
-# Reinforcement Learning in TX2
+# Reinforcement Learning in Nvidia TX2
 July 4, 2018
 
 
