@@ -11,5 +11,7 @@ NVIDIA Jetson TX2 is flashed by JetPack 3.1 which includes:
 * TensorRT 2.1
 * openCV for Tegra 2.4
 
-JetPack 3.1 is available here: https://developer.nvidia.com/embedded/jetpack-3_1
-
+JetPack 3.1 is available here: 
+  https://developer.nvidia.com/embedded/jetpack-3_1
+JetPack installation guide is available here: 
+  https://developer.nvidia.com/embedded/dlc/l4t-27-1-jetson-tx2-user-guide
