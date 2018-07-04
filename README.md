@@ -13,5 +13,6 @@ NVIDIA Jetson TX2 is flashed by JetPack 3.1 which includes:
 
 JetPack 3.1 is available here: 
   https://developer.nvidia.com/embedded/jetpack-3_1
+  
 JetPack installation guide is available here: 
   https://developer.nvidia.com/embedded/dlc/l4t-27-1-jetson-tx2-user-guide
