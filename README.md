@@ -48,14 +48,18 @@ The followings are installed and cloned:
 
 ### Build TensorFlow
 ```
-$ 
+$ ./buildTensorFlow.sh
+$ ./packageTensorFlow.sh
+$ ./pip install $HOME/wheel file
 ```
 
 ## Step 3. MAgent
 Now, we will run the [MAgent](https://github.com/geek-ai/MAgent) (many-agent reinforcement learning) on TX2.
+
 The paper is shown here: https://arxiv.org/abs/1712.00600
 
 The baseline algorithms of MAgent are parameter-sharing DQN, DRQN, a2c in Tensorflow. 
+
 DQN shows the best performance in large number sharing and gridworld settings.
 
 ### Git clone
