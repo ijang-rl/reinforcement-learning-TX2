@@ -73,6 +73,7 @@ $ export PYTHONPATH=$(pwd)/python:$PYTHONPATH
 ```
 
 ### Run examples
+> NOTE: You have to run following examples in the root of MAgent. DO NOT cd to ₩examples/₩.
 #### Train
 * pursuit
 ```
