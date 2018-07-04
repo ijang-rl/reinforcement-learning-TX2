@@ -26,12 +26,16 @@ JetPack installation guide is available here:
 ## Step 2. Install TensorFlow
 To install TensorFlow in TX2, we can follow [Tensorflow-Jetson-TX2](https://github.com/eweill/Tensorflow-Jetson-TX2).
 
-### Download and install a wheel file
+### Download a wheel file
 The pre-built wheel file can be obtained from here:
   https://github.com/eweill/Tensorflow-Jetson-TX2/releases
 
 ```
 $ wget --no-check-certificate <url-to-whl-file>
+```
+
+### Install the wheel file
+```
 $ sudo pip install <file-name>.whl
 ```
 
