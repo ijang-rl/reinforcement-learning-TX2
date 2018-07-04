@@ -6,7 +6,7 @@ July 4, 2018
 
 
 ## Step 1. Flash an OS and components
-NVIDIA Jetson TX2 is flashed by JetPack 3.1 which includes:
+NVIDIA Jetson TX2 can be flashed by JetPack 3.1 which includes:
 * L4T 28.1 (which is an Ubuntu 16.04 64-bit variant(aarch64))
 * CUDA 8.0
 * cuDNN 6.0
@@ -29,6 +29,8 @@ To install TensorFlow in TX2, we can follow [Tensorflow-Jetson-TX2](https://gith
 ### Download a wheel file
 The pre-built wheel file can be obtained from here:
   https://github.com/eweill/Tensorflow-Jetson-TX2/releases
+
+If you use JetPack 3.1, TensorFlow 1.4.1, 1.5.0, and 1.6.0 are available.
 
 ```
 $ wget --no-check-certificate <url-to-whl-file>
