@@ -31,6 +31,7 @@ The pre-built wheel file can be obtained from here:
   https://github.com/eweill/Tensorflow-Jetson-TX2/releases
 
 If you use JetPack 3.1, TensorFlow 1.4.1, 1.5.0, and 1.6.0 are available.
+> NOTE: All wheel files were built using Bazel 0.10.0.
 
 ```
 $ wget --no-check-certificate <url-to-whl-file>
