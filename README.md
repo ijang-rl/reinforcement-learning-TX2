@@ -16,3 +16,7 @@ JetPack 3.1 is available here:
   
 JetPack installation guide is available here: 
   https://developer.nvidia.com/embedded/dlc/l4t-27-1-jetson-tx2-user-guide
+
+Step 2. Install TensorFlow
+----------------------------
+[installTensorFlowTx2 by JetsonHacks](https://github.com/jetsonhacks/installTensorFlowTX2) is a good guidance.
