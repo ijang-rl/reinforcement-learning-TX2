@@ -1,4 +1,4 @@
-# Reinforcement Learning in Nvidia TX2
+# Multiagent Reinforcement Learning in Nvidia TX2
 July 4, 2018
 
 
