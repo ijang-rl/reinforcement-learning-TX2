@@ -108,3 +108,6 @@ $ python examples/train_battle.py --train
 ```
 $ python examples/show_battle_game.py
 ```
+
+## Note
+> MARL paper collection: https://github.com/LantaoYu/MARL-Papers
