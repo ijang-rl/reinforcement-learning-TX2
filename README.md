@@ -22,11 +22,7 @@ JetPack installation guide is available here:
   https://developer.nvidia.com/embedded/dlc/l4t-27-1-jetson-tx2-user-guide
     
 ### Add a swap file
-TX2 uses a 8G unified memory which is shared between the CPU and GPU.
-
-When a model is trained, `OUT_OF_MEMORY` problems may occur.
-
-So we add some swap memory for TX2 as follows:
+TX2 uses a 8G unified memory which is shared between the CPU and GPU. When a model is trained, `OUT_OF_MEMORY` problems may occur. So we add some swap memory for TX2 as follows:
 ```
 $ cd ~
 $ fallocate -l 8G swapfile        # Create a swapfile
@@ -37,8 +33,15 @@ $ sudo swapon swapfile            # Now start using the swapfile
 $ swapon -s                       # Show that it's now being used
 ```
 
+### Change the performance mode of TX2
+```
+$ sudo nvpmodel -m 0             # 0 means the best performance mode
+```
+About NVPmodel: https://www.jetsonhacks.com/2017/03/25/nvpmodel-nvidia-jetson-tx2-development-kit/
   
-  
+
+
+
 
 ## Step 2. Install TensorFlow
 To install TensorFlow in TX2, we can follow [Tensorflow-Jetson-TX2](https://github.com/eweill/Tensorflow-Jetson-TX2).
@@ -64,13 +67,9 @@ $ sudo pip install <file-name>.whl
 
 
 ## Step 3. MAgent
-Now, we will run the [MAgent](https://github.com/geek-ai/MAgent) (many-agent reinforcement learning) on TX2.
+Now, we will run the [MAgent](https://github.com/geek-ai/MAgent) (many-agent reinforcement learning) on TX2. The paper is shown here: https://arxiv.org/abs/1712.00600 
 
-The paper is shown here: https://arxiv.org/abs/1712.00600
-
-The baseline algorithms of MAgent are parameter-sharing DQN, DRQN, a2c in Tensorflow. 
-
-DQN shows the best performance in large number sharing and gridworld settings.
+The baseline algorithms of MAgent are parameter-sharing DQN, DRQN, a2c in Tensorflow. DQN shows the best performance in large number sharing and gridworld settings.
 
 ### Git clone
 ```
