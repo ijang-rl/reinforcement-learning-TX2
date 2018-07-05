@@ -111,4 +111,5 @@ $ python examples/show_battle_game.py
 
 ## Note
 > MARL paper collection: https://github.com/LantaoYu/MARL-Papers
+
 > RL Gitbook (in Korean): https://dnddnjs.gitbooks.io/rl/content/
