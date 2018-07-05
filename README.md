@@ -7,7 +7,7 @@ July 4, 2018
 
 ## Step 1. Flash an OS and components
 
-### Flash L4T and components
+### Flash the L4T and components
 NVIDIA Jetson TX2 can be flashed by JetPack 3.1 which includes:
 * L4T 28.1 (which is an Ubuntu 16.04 64-bit variant(aarch64))
 * CUDA 8.0
