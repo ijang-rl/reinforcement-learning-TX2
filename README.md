@@ -25,7 +25,7 @@ JetPack installation guide is available here:
 TX2 uses a 8G unified memory which is shared between the CPU and GPU. When a model is trained, `OUT_OF_MEMORY` problems may occur. So we add some swap memory for TX2 as follows:
 ```
 $ cd ~
-$ fallocate -l 8G swapfile        # Create a swapfile
+$ fallocate -l 8G swapfile        # Create a 8G swapfile
 $ chmod 600 swapfile              # Change permissions
 $ ls -lh swapfile                 # List out the file
 $ mkswap swapfile                 # Set up the Linux swap area
