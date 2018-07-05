@@ -6,6 +6,8 @@ July 4, 2018
 
 
 ## Step 1. Flash an OS and components
+
+### Flash L4T and components
 NVIDIA Jetson TX2 can be flashed by JetPack 3.1 which includes:
 * L4T 28.1 (which is an Ubuntu 16.04 64-bit variant(aarch64))
 * CUDA 8.0
@@ -18,8 +20,23 @@ JetPack 3.1 is available here:
   
 JetPack installation guide is available here: 
   https://developer.nvidia.com/embedded/dlc/l4t-27-1-jetson-tx2-user-guide
-  
-  
+    
+### Add a swap file
+TX2 uses a 8G unified memory which is shared between the CPU and GPU.
+
+When a model is trained, `OUT_OF_MEMORY` problems may occur.
+
+So we add some swap memory for TX2 as follows:
+```
+$ cd ~
+$ fallocate -l 8G swapfile        # Create a swapfile
+$ chmod 600 swapfile              # Change permissions
+$ ls -lh swapfile                 # List out the file
+$ mkswap swapfile                 # Set up the Linux swap area
+$ sudo swapon swapfile            # Now start using the swapfile
+$ swapon -s                       # Show that it's now being used
+```
+
   
   
 
