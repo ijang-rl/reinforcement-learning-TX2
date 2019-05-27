@@ -32,10 +32,8 @@ $ mkswap swapfile                 # Set up the Linux swap area
 $ sudo swapon swapfile            # Now start using the swapfile
 $ swapon -s                       # Show that it's now being used
 ```
-How to add and delete swap space in Ubuntu:
-  https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
-Swap memory in TX2 with a SSD:
-  http://blog.naver.com/PostView.nhn?blogId=kangdonghyun&logNo=221046775377&categoryNo=17&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search
+How to add and delete swap space in Ubuntu: see [here](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/).
+Swap memory in TX2 with a SSD: see [here](http://blog.naver.com/PostView.nhn?blogId=kangdonghyun&logNo=221046775377&categoryNo=17&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search).
 
 ### Change the performance mode of TX2
 ```
