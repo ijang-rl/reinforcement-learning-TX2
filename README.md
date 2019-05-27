@@ -33,6 +33,9 @@ $ sudo swapon swapfile            # Now start using the swapfile
 $ swapon -s                       # Show that it's now being used
 ```
 
+Swap memory in TX2 with a SSD:
+  http://blog.naver.com/PostView.nhn?blogId=kangdonghyun&logNo=221046775377&categoryNo=17&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search
+
 ### Change the performance mode of TX2
 ```
 $ sudo nvpmodel -m 0             # 0 means the best performance mode
