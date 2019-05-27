@@ -47,26 +47,12 @@ About NVPmodel: https://www.jetsonhacks.com/2017/03/25/nvpmodel-nvidia-jetson-tx
 
 
 ## Step 2. Install TensorFlow
-To install TensorFlow in TX2, we can follow [Tensorflow-Jetson-TX2](https://github.com/eweill/Tensorflow-Jetson-TX2).
-
-### Download a wheel file
-The pre-built wheel file can be obtained from here:
-  https://github.com/eweill/Tensorflow-Jetson-TX2/releases
-
-If you use JetPack 3.1, TensorFlow 1.4.1, 1.5.0, and 1.6.0 are available.
-> NOTE: All wheel files were built using Bazel 0.10.0.
+To install TensorFlow in TX2, we can follow [this manual](https://docs.nvidia.com/deeplearning/frameworks/pdf/Install-TensorFlow-For-Jetson-TX2.pdf).
 
 ```
-$ wget --no-check-certificate <url-to-whl-file>
+$ pip install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp33 tensorflow-gpu
 ```
-
-### Install the wheel file
-```
-$ sudo pip install <file-name>.whl
-```
-
-
-
+TF installation for other Python + JetPack combinations: see [here](https://devtalk.nvidia.com/default/topic/1038957/jetson-tx2/tensorflow-for-jetson-tx2-/).
 
 
 ## Step 3. MAgent
