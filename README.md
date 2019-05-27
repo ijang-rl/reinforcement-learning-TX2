@@ -1,5 +1,5 @@
 # Multiagent Reinforcement Learning in Nvidia TX2
-July 4, 2018
+MAy 27, 2019
 
 
 
@@ -8,18 +8,18 @@ July 4, 2018
 ## Step 1. Flash an OS and components
 
 ### Flash the L4T and components
-NVIDIA Jetson TX2 can be flashed by JetPack 3.1 which includes:
-* L4T 28.1 (which is an Ubuntu 16.04 64-bit variant(aarch64))
-* CUDA 8.0
-* cuDNN 6.0
-* TensorRT 2.1
-* openCV for Tegra 2.4
+NVIDIA Jetson TX2 can be flashed by JetPack 4.2 which includes:
+* L4T R32.1 (which is an Ubuntu 18.04 64-bit variant(aarch64))
+* CUDA 10.0
+* cuDNN 7.3.1
+* TensorRT 5.0.6
+* openCV 3.3.1
 
-JetPack 3.1 is available here: 
-  https://developer.nvidia.com/embedded/jetpack-3_1
+JetPack is available here: 
+  https://developer.nvidia.com/embedded/jetpack
   
 JetPack installation guide is available here: 
-  https://developer.nvidia.com/embedded/dlc/l4t-27-1-jetson-tx2-user-guide
+  https://developer.ridgerun.com/wiki/index.php?title=Installing_JetPack_4.2_-_Nvidia_SDK_Manager
     
 ### Add a swap file
 TX2 uses a 8G unified memory which is shared between the CPU and GPU. When a model is trained, `OUT_OF_MEMORY` problems may occur. So we add some swap memory for TX2 as follows:
@@ -42,8 +42,6 @@ $ sudo nvpmodel -m 0             # 0 means the best performance mode
 ```
 About NVPmodel: https://www.jetsonhacks.com/2017/03/25/nvpmodel-nvidia-jetson-tx2-development-kit/
   
-
-
 
 
 ## Step 2. Install TensorFlow
