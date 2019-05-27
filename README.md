@@ -47,8 +47,9 @@ About NVPmodel: https://www.jetsonhacks.com/2017/03/25/nvpmodel-nvidia-jetson-tx
 ## Step 2. Install TensorFlow
 To install TensorFlow in TX2, we can follow [this installation guide](https://docs.nvidia.com/deeplearning/frameworks/pdf/Install-TensorFlow-For-Jetson-TX2.pdf).
 
+For Python 3.6 + JetPack 4.2:
 ```
-$ pip install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp33 tensorflow-gpu
+$ pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.5 --user
 ```
 TF installation for other Python + JetPack combinations: see [here](https://devtalk.nvidia.com/default/topic/1038957/jetson-tx2/tensorflow-for-jetson-tx2-/).
 
